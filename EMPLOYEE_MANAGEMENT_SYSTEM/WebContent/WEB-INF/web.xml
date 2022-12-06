@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>J2EEProject</display-name>
+  <welcome-file-list>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>Home.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>SellerServlet</display-name>
+    <servlet-name>SellerServlet</servlet-name>
+    <servlet-class>SellerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SellerServlet</servlet-name>
+    <url-pattern>/SellerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>BuyerServlet</display-name>
+    <servlet-name>BuyerServlet</servlet-name>
+    <servlet-class>BuyerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BuyerServlet</servlet-name>
+    <url-pattern>/BuyerServlet</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <description></description>
+    <display-name>Addservlet</display-name>
+    <servlet-name>Addservlet</servlet-name>
+    <servlet-class>Addservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addservlet</servlet-name>
+    <url-pattern>/Addservlet</url-pattern>
+  </servlet-mapping>
+</web-app>
