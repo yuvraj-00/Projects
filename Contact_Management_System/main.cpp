@@ -233,7 +233,7 @@ public:
 
 	void writeExisting(){
 		string num, line, fname, lname, email;
-		myFileStream.open("Contacts.txt");
+		myFileStream.open("Phone_input.txt");
 		if (!myFileStream.is_open()){
 			cout << "File failed to open" << endl;
 		}
@@ -294,7 +294,7 @@ int main()
 		case 5:q.inorder(); break;
 		default:cout << "\nOption Invalid"; break;
 		}
-		outf.open("Contacts.txt", ios::trunc);
+		outf.open("Phone_input.txt", ios::trunc);
 		q.filee(q.root);
 		outf.close();
 		cout << endl << "Continue?\n";
